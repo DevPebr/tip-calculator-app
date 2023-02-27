@@ -1,0 +1,409 @@
+@import './colors.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+
+    body {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light-grayish-cyan;
+        background-image: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        background-position: center top 50px;
+        padding: 80px 0 0 0;
+
+        main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+
+        article {
+            height: 400px;
+            width: 870px;
+            padding: 30px 40px;
+            gap: 50px;
+            border-radius: 1.5rem;
+            display: flex;
+            background-color: $white;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                gap: 25px;
+                position: relative;
+
+                .bill-input {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+
+                    label {
+                        color: $very-dark-cyan;
+                        font-weight: 700;
+                    }
+
+                    img {
+                        position: absolute;
+                        margin-left: 20px;
+                        top: 39px;
+                    }
+
+                    input {
+                        display: flex;
+                        width: 100%;
+                        text-align: end;
+                        padding: 5px 20px 5px 20px;
+                        border: none;
+                        background-color: $very-light-grayish-cyan;
+                        outline: 0;
+                        border-radius: 3px;
+                        font-size: 24px;
+                        color: $very-dark-cyan;
+
+                        &::placeholder {
+                            font-size: 24px;
+                            color: $grayish-cyan;
+                        }
+                    }
+                }
+
+                // .bill-input
+
+                .tip {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        color: $grayish-cyan;
+                    }
+
+                    .tip-buttons {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 15px;
+                        width: auto;
+
+                        button {
+                            width: 115px;
+                            height: 40px;
+                            font-size: 24px;
+                            border: none;
+                            border-radius: 5px;
+                            background-color: $very-dark-cyan;
+                            color: $white;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: $strong-cyan;
+                            }
+
+                            &:active {
+                                background-color: $very-dark-cyan;
+                            }
+                        }
+
+                        .custom {
+                            background-color: $very-light-grayish-cyan;
+                            color: $very-dark-cyan;
+                            font-weight: 700;
+                            width: 115px;
+                            border-radius: 5px;
+                            font-size: 24px;
+                            text-align: end;
+                            padding: 0 10px;
+                            border: none;
+                            outline: 0;
+                            cursor: pointer;
+
+                            &::placeholder {
+                                color: $very-dark-cyan;
+                            }
+
+                           
+                        }
+                    }
+                }
+
+                .people-label {
+                    color: $very-dark-cyan;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: space-between;
+                    
+
+                    span {
+                        color: red;
+                        display: none;
+                    }
+                }
+
+                .people-number {
+                    display: flex;
+                    width: 100%;
+                    text-align: end;
+                    padding: 5px 20px 5px 20px;
+                    border: none;
+                    background-color: $very-light-grayish-cyan;
+                    outline: 0;
+                    border-radius: 3px;
+                    font-size: 24px;
+                    color: $very-dark-cyan;
+                    position: relative;
+
+                    &::placeholder {
+                        font-size: 24px;
+                        color: $grayish-cyan;
+                    }
+                }
+
+                .person-icon {
+                    position: absolute;
+                    bottom: 8px;
+                    z-index: 10;
+                    margin-left: 20px;
+                }
+            }
+
+            // form
+
+            .calc-side {
+                background-color: $very-dark-cyan;
+                border-radius: 12px;
+                padding: 40px 30px;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .tip-person {
+                    display: flex;
+
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p {
+                        color: $white;
+                        display: flex;
+                        flex-direction: column;
+                        font-weight: 700;
+
+                        span {
+                            font-size: 1rem;
+                            color: $dark-grayish-cyan;
+                        }
+                    }
+
+                    span {
+                        font-size: 42px;
+                        font-weight: 700;
+                        color: $strong-cyan;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .total {
+                    display: flex;
+
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p {
+                        color: $white;
+                        display: flex;
+                        flex-direction: column;
+                        font-weight: 700;
+
+                        span {
+                            font-size: 1rem;
+                            color: $dark-grayish-cyan;
+                        }
+                    }
+
+                    span {
+                        font-size: 42px;
+                        font-weight: 700;
+                        color: $strong-cyan;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                button {
+                    margin-top: 60px;
+                    border: none;
+                    background-color: $strong-cyan;
+                    color: $very-dark-cyan;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    letter-spacing: .5px;
+                    padding: 7px 0;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $light-grayish-cyan;
+                    }
+
+                    &:active {
+                        background-color: $strong-cyan;
+                    }
+                }
+            } // .calc-side
+        } // article
+        }
+        
+    } // body
+
+
+    @media screen and (max-width: 890px) {
+        body {
+            main {
+                padding: 50px 0;
+
+                article {
+                    flex-direction: column;
+                    height: auto;
+                    width: 95%;
+                    align-items: center;
+
+                    form {
+                        width: 100%;
+                        .tip {
+                            .tip-buttons {
+                                justify-content: center;
+                                gap: 11px;
+
+                                button {
+                                    width: 49%;
+                                }
+
+                                .custom {
+                                    width: 49%;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    .calc-side {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 664px) {
+        body {
+            main {
+                article {
+                    form {
+                        .tip {
+                            .tip-buttons {
+                               
+                                gap: 12px 22px;
+                                button {
+                                    width: 46%;
+                                }
+
+                                .custom {
+                                    width: 46%;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    .calc-side {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 510px) {
+        body {
+            main {
+                article {
+                    width: 98%;
+                    
+                    form {
+                        width: 100%;
+                        .tip {
+                            .tip-buttons {
+                                justify-content: center;
+                                gap: 15px;
+
+                                button {
+                                    width: 48%;
+                                }
+                                .custom {
+                                    width: 48%;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    .calc-side {
+                        width: 100%;
+
+                        .tip-person {
+                            p {
+                                font-size: .8rem;
+                            }
+
+                            span#per-person {
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        .total {
+                            #total-amount {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        body {
+            main {
+                article {
+                    form {
+                        .tip {
+                            .tip-buttons {
+                                justify-content: center;
+                                
+                                button {
+                                    width: 47%;
+                                }
+                                .custom {
+                                    width: 47%;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} // *
+

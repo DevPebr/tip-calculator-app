@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./scss/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="container">
+
+    <article class="card">
+
+      <form class="inputs-side">
+        
+        <section class="bill-input">
+        <label for="bill" class="bill">Bill</label>
+        <img src="./images/icon-dollar.svg" alt="dolar-icon">
+        <input type="text" id="bill" name="bill" class="bill-value" placeholder="0" oninput="billValueValidity()">
+      </section>
+
+      <section class="tip">
+      <p>Select Tip %</p>
+
+      <section class="tip-buttons">
+        <button type="button" class="5"  id="5"  value="0.05">5%</button>
+        <button type="button" class="10" id="10" value="0.10">10%</button>
+        <button type="button" class="15" id="15" value="0.15">15%</button>
+        <button type="button" class="25" id="25" value="0.25">25%</button>
+        <button type="button" class="50" id="50" value="0.50">50%</button>
+        <input type="text" class="custom" placeholder="Custom" id="custom" oninput="billValueValidity()">
+      </section>
+      </section>
+        
+        <label for="people-number" class="people-label">
+          Number of People
+          <span class="error" id="error" style="display: none;">Can't be zero</span>
+        </label>
+        <img src="./images/icon-person.svg" alt="person-icon" width="15px" class="person-icon">
+        <input type="text"
+        name="people-number"
+        id="people-number"
+        class="people-number"
+        placeholder="0">
+        
+      </form>
+
+      <section class="calc-side">
+
+      <section class="tip-person">
+      <p>Tip Amount
+        <span>/ person</span> 
+      </p>
+
+      <span id="per-person">$0.00</span>
+      </section>  
+      
+      <section class="total">
+       <p>Total
+         <span>/ person</span>
+       </p>
+       <span id="total-amount">$0.00</span>
+      </section>
+        <button type="button" onclick="reset()">Reset</button> 
+      </section>
+    </article>
+  </main>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>

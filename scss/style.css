@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+}
+
+* body {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c5e4e7;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center top 50px;
+  padding: 80px 0 0 0;
+}
+
+* body main {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body main article {
+  height: 400px;
+  width: 870px;
+  padding: 30px 40px;
+  gap: 50px;
+  border-radius: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+* body main article form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 420px;
+  gap: 25px;
+  position: relative;
+}
+
+* body main article form .bill-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+* body main article form .bill-input label {
+  color: #00494d;
+  font-weight: 700;
+}
+
+* body main article form .bill-input img {
+  position: absolute;
+  margin-left: 20px;
+  top: 39px;
+}
+
+* body main article form .bill-input input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: end;
+  padding: 5px 20px 5px 20px;
+  border: none;
+  background-color: #f4fafa;
+  outline: 0;
+  border-radius: 3px;
+  font-size: 24px;
+  color: #00494d;
+}
+
+* body main article form .bill-input input::-webkit-input-placeholder {
+  font-size: 24px;
+  color: #7f9c9f;
+}
+
+* body main article form .bill-input input:-ms-input-placeholder {
+  font-size: 24px;
+  color: #7f9c9f;
+}
+
+* body main article form .bill-input input::-ms-input-placeholder {
+  font-size: 24px;
+  color: #7f9c9f;
+}
+
+* body main article form .bill-input input::placeholder {
+  font-size: 24px;
+  color: #7f9c9f;
+}
+
+* body main article form .tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+* body main article form .tip p {
+  color: #7f9c9f;
+}
+
+* body main article form .tip .tip-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  width: auto;
+}
+
+* body main article form .tip .tip-buttons button {
+  width: 115px;
+  height: 40px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00494d;
+  color: white;
+  cursor: pointer;
+}
+
+* body main article form .tip .tip-buttons button:hover {
+  background-color: #26c0ab;
+}
+
+* body main article form .tip .tip-buttons button:active {
+  background-color: #00494d;
+}
+
+* body main article form .tip .tip-buttons .custom {
+  background-color: #f4fafa;
+  color: #00494d;
+  font-weight: 700;
+  width: 115px;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: end;
+  padding: 0 10px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+* body main article form .tip .tip-buttons .custom::-webkit-input-placeholder {
+  color: #00494d;
+}
+
+* body main article form .tip .tip-buttons .custom:-ms-input-placeholder {
+  color: #00494d;
+}
+
+* body main article form .tip .tip-buttons .custom::-ms-input-placeholder {
+  color: #00494d;
+}
+
+* body main article form .tip .tip-buttons .custom::placeholder {
+  color: #00494d;
+}
+
+* body main article form .people-label {
+  color: #00494d;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* body main article form .people-label span {
+  color: red;
+  display: none;
+}
+
+* body main article form .people-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: end;
+  padding: 5px 20px 5px 20px;
+  border: none;
+  background-color: #f4fafa;
+  outline: 0;
+  border-radius: 3px;
+  font-size: 24px;
+  color: #00494d;
+  position: relative;
+}
+
+* body main article form .people-number::-webkit-input-placeholder {
+  font-size: 24px;
+  color: #7f9c9f;
+}
+
+* body main article form .people-number:-ms-input-placeholder {
+  font-size: 24px;
+  color: #7f9c9f;
+}
+
+* body main article form .people-number::-ms-input-placeholder {
+  font-size: 24px;
+  color: #7f9c9f;
+}
+
+* body main article form .people-number::placeholder {
+  font-size: 24px;
+  color: #7f9c9f;
+}
+
+* body main article form .person-icon {
+  position: absolute;
+  bottom: 8px;
+  z-index: 10;
+  margin-left: 20px;
+}
+
+* body main article .calc-side {
+  background-color: #00494d;
+  border-radius: 12px;
+  padding: 40px 30px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+* body main article .calc-side .tip-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* body main article .calc-side .tip-person p {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 700;
+}
+
+* body main article .calc-side .tip-person p span {
+  font-size: 1rem;
+  color: #5e7a7d;
+}
+
+* body main article .calc-side .tip-person span {
+  font-size: 42px;
+  font-weight: 700;
+  color: #26c0ab;
+  letter-spacing: 1px;
+}
+
+* body main article .calc-side .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* body main article .calc-side .total p {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 700;
+}
+
+* body main article .calc-side .total p span {
+  font-size: 1rem;
+  color: #5e7a7d;
+}
+
+* body main article .calc-side .total span {
+  font-size: 42px;
+  font-weight: 700;
+  color: #26c0ab;
+  letter-spacing: 1px;
+}
+
+* body main article .calc-side button {
+  margin-top: 60px;
+  border: none;
+  background-color: #26c0ab;
+  color: #00494d;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding: 7px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+* body main article .calc-side button:hover {
+  background-color: #c5e4e7;
+}
+
+* body main article .calc-side button:active {
+  background-color: #26c0ab;
+}
+
+@media screen and (max-width: 890px) {
+  * body main {
+    padding: 50px 0;
+  }
+  * body main article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 95%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * body main article form {
+    width: 100%;
+  }
+  * body main article form .tip .tip-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 11px;
+  }
+  * body main article form .tip .tip-buttons button {
+    width: 49%;
+  }
+  * body main article form .tip .tip-buttons .custom {
+    width: 49%;
+    text-align: center;
+  }
+  * body main article .calc-side {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 664px) {
+  * body main article form .tip .tip-buttons {
+    gap: 12px 22px;
+  }
+  * body main article form .tip .tip-buttons button {
+    width: 46%;
+  }
+  * body main article form .tip .tip-buttons .custom {
+    width: 46%;
+    text-align: center;
+  }
+  * body main article .calc-side {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  * body main article {
+    width: 98%;
+  }
+  * body main article form {
+    width: 100%;
+  }
+  * body main article form .tip .tip-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+  }
+  * body main article form .tip .tip-buttons button {
+    width: 48%;
+  }
+  * body main article form .tip .tip-buttons .custom {
+    width: 48%;
+    text-align: center;
+  }
+  * body main article .calc-side {
+    width: 100%;
+  }
+  * body main article .calc-side .tip-person p {
+    font-size: .8rem;
+  }
+  * body main article .calc-side .tip-person span#per-person {
+    font-size: 1.5rem;
+  }
+  * body main article .calc-side .total #total-amount {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  * body main article form .tip .tip-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  * body main article form .tip .tip-buttons button {
+    width: 47%;
+  }
+  * body main article form .tip .tip-buttons .custom {
+    width: 47%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
